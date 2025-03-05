@@ -1,15 +1,18 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import path from 'path';
 
 export default defineConfig({
   plugins: [react()],
-  root: path.resolve(__dirname, "./"),
+  server: {
+    mimeTypes: {
+      "text/html": ["html"] // Ensure Vite serves HTML correctly
+    },
+    headers: {
+      "Content-Type": "text/html" // Explicitly set the correct MIME type
+    }
+  },
   publicDir: "public",
   build: {
     outDir: "dist",
-    rollupOptions: {
-      input: path.resolve(__dirname, "public/index.html"),
-    }
   }
 });
