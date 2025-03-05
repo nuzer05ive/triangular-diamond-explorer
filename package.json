@@ -1,0 +1,12 @@
+{
+  "name": "triangular-diamond-explorer",
+  "version": "1.0.0",
+  "description": "PRiiiM3 Tri-axes-Toroidal Harmonics of the O^3 Model, specifically the primitive geometric structures that underlie number theory, shaped by the mod/3/6/9 fractal, this model provides the optimized, optimal, optimization necessary for computing large scale primes, and is the fundamental mathematical structure that solves the decades old problem, RH",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
