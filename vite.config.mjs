@@ -4,11 +4,10 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   server: {
-    mimeTypes: {
-      "text/html": ["html"] // Ensure Vite serves HTML correctly
-    },
+    host: "0.0.0.0",
+    port: 5173,
     headers: {
-      "Content-Type": "text/html" // Explicitly set the correct MIME type
+      "Content-Type": "text/html; charset=UTF-8"
     }
   },
   publicDir: "public",
